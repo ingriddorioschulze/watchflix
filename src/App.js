@@ -1,11 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
         <h1>WATCHFLIX</h1>
-      </header>
     </div>
   );
 }
