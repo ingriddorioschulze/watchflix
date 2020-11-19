@@ -6,18 +6,12 @@ import NavBar from './NavBar'
 import requests from './requests'
 
 const AppWrapper = styled.div`
-  background-color: #050404;
-
-  h1 {
-    color: #ffb100;
-    font-family: 'Bebas Neue', cursive;
-  }
+  background-color: #111;
 `
 
 function App() {
   return (
     <AppWrapper>
-      <h1>WATCHFLIX</h1>
       <NavBar />
       <Banner />
       <Row

@@ -8,10 +8,12 @@ const base_url = 'https://image.tmdb.org/t/p/original/'
 const RowWrapper = styled.div`
   margin-left: 20px;
 
-  h2 {
+  .row-title {
     font-size: 16px;
     padding-left: 20px;
-    color: #ffb100;
+    color: white;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
   }
 `
 const RowPostersWrapper = styled.div`
@@ -55,7 +57,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   return (
     <RowWrapper>
-      <h2>{title}</h2>
+      <h1 className="row-title">{title}</h1>
       <RowPostersWrapper>
         {movies.map((movie) => (
           <img
