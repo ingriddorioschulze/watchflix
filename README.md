@@ -4,12 +4,12 @@ Netflix inspired Movies and TV Shows streaming app built in Javascript, React, T
 
 Landing page where the user can browse Movies and TV Shows.
 
-![watchflix main page png](./assets/watchflix-page.png)
+![watchflix page png](./assets/watchflix-page.png)
 
 
 Clicking on a Movie or TV Show poster displays a pop up with the title trailer.
 
-![watchflix watch trailer png](./assets/watchflix-trailer.png)
+![watchflix trailer png](./assets/watchflix-trailer.png)
 
 # technologies
 
