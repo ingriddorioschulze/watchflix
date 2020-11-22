@@ -53,10 +53,10 @@ function NavBar() {
       <div className={`navbar ${show && 'navbar-black'}`}>
         <img
           className="navbar-logo"
-          src="/assets/watchflix_logo.png"
+          src="/watchflix_logo.png"
           alt="Watchflix Logo"
         />
-        <img className="navbar-avatar" src="/assets/avatar.png" alt="Avatar" />
+        <img className="navbar-avatar" src="/avatar.png" alt="Avatar" />
       </div>
     </NavBarWrapper>
   )
