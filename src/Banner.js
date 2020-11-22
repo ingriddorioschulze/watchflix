@@ -75,7 +75,7 @@ const BannerWrapper = styled.div`
 //#endregion
 
 function Banner() {
-  const [movie, setMovie] = useState([])
+  const [movie, setMovie] = useState()
 
   useEffect(() => {
     async function fetchData() {
@@ -94,26 +94,28 @@ function Banner() {
     return str?.length > n ? str.substr(0, n - 1) + '...' : str
   }
 
+  if (!movie) return null
+
   return (
     <BannerWrapper>
       <header
         className="banner"
         style={{
           backgroundSize: 'cover',
-          backgroundImage: `url(${base_url}${movie?.backdrop_path})`,
+          backgroundImage: `url(${base_url}${movie.backdrop_path})`,
           backgroundPosition: 'center center',
         }}
       >
         <div className="banner-content">
           <h1 className="banner-title">
-            {movie?.title || movie?.name || movie?.original_name}
+            {movie.title || movie?.name || movie.original_name}
           </h1>
           <div className="banner-buttons">
             <button className="banner-button">Plan</button>
             <button className="banner-button">My List</button>
           </div>
           <h1 className="banner-description">
-            {truncate(movie?.overview, 150)}
+            {truncate(movie.overview, 150)}
           </h1>
         </div>
         <div className="banner-fade-bottom" />
